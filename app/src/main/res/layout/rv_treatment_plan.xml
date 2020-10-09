@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorLightNavyBlue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view"
+            android:background="@color/colorViewLine"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPatientNumber"
+                android:text="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/treatment_plan_number_bag_outline_grey"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:id="@+id/rvTreatmentPlanName"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Antimicrobial debridement agent"
+                style="@style/TvNormalStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

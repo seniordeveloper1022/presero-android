@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/colorLightNavyBlue">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:weightSum="1"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_weight=".5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="@dimen/_20sdp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_marginBottom="@dimen/_10sdp"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:text="Name"
+                      android:textSize="@dimen/_10sdp"
+                      android:fontFamily="@font/poppins_light"
+                      android:textColor="@color/transparent_white"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+                      android:id="@+id/tvPatientName"
+                      android:text="Jeo Flanders"
+                      android:fontFamily="@font/poppins_light"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+
+                      android:text="Date of Birth"
+                      android:textColor="@color/transparent_white"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:textSize="@dimen/_10sdp"
+                      android:fontFamily="@font/poppins_light"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+                      android:id="@+id/tvDateOfBirth"
+                      android:text="01/17/2020"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:fontFamily="@font/poppins_light"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+              </LinearLayout>
+
+          </LinearLayout>
+          <View
+              android:background="@color/colorViewLine"
+              android:layout_marginLeft="@dimen/_10sdp"
+              android:layout_marginBottom="@dimen/_11sdp"
+              android:layout_marginTop="@dimen/_11sdp"
+              android:layout_marginRight="@dimen/_10sdp"
+              android:layout_width="1dp"
+              android:layout_height="match_parent"/>
+          <LinearLayout
+              android:layout_weight=".5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="@dimen/_30sdp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_marginBottom="@dimen/_10sdp"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:text="ID"
+                      android:fontFamily="@font/poppins_light"
+                      android:textSize="@dimen/_10sdp"
+                      android:textColor="@color/transparent_white"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+                      android:id="@+id/tvPatientId"
+                      android:text="UY12112"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:textSize="@dimen/_10sdp"
+                      android:fontFamily="@font/poppins_light"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+                      android:text="Last Scan"
+                      android:fontFamily="@font/poppins_light"
+                      android:textColor="@color/transparent_white"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+                  <TextView
+                      android:id="@+id/tvLasScanDate"
+                      android:text="07/17/2020"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:textSize="@dimen/_10sdp"
+                      android:fontFamily="@font/poppins_light"
+                      android:layout_width="wrap_content"
+                      style="@style/TvNormalStyle"/>
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:paddingLeft="@dimen/_10sdp"
+          android:paddingBottom="@dimen/_5sdp"
+          android:paddingTop="@dimen/_5sdp"
+          android:paddingRight="@dimen/_10sdp"
+          android:background="@color/colorDarkNavyBlue"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/tvOperator"
+              android:text="Operator"
+              android:fontFamily="@font/poppins_light"
+              android:textSize="@dimen/_11sdp"
+              android:textColor="@color/colorPink"
+              android:layout_marginTop="@dimen/_1sdp"
+              android:layout_marginBottom="@dimen/_1sdp"
+              android:layout_marginLeft="@dimen/_10sdp"
+              android:layout_marginRight="@dimen/_10sdp"
+              android:layout_width="wrap_content"
+              style="@style/TvNormalStyle"/>
+          <View
+              android:background="@color/colorWhite"
+              android:layout_width="1dp"
+              android:layout_height="match_parent"/>
+          <TextView
+              android:id="@+id/tvOperatorName"
+              android:text="Richard Vogel"
+              android:fontFamily="@font/poppins_light"
+              android:layout_marginLeft="@dimen/_20sdp"
+              android:layout_marginRight="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_1sdp"
+              android:layout_marginBottom="@dimen/_1sdp"
+              android:textSize="@dimen/_11sdp"
+              android:layout_width="wrap_content"
+              style="@style/TvNormalStyle"/>
+
+
+      </LinearLayout>
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

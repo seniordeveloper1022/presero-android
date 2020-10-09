@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#171D25"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_above="@id/relativeLayout"
+            android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <include layout="@layout/nav_header_main">
+
+        </include>
+
+
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rlItemsMain"
+                   tools:itemCount="5"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   tools:listitem="@layout/nav_items_main"
+                   android:background="@color/colorWhite"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:gravity="end|center"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/llLogout"
+            android:background="#12171D"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="Logout"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/_20sdp"
+                style="@style/TvNormalStyle"/>
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_toRightOf="@id/tvTitle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/icon_logout"
+                android:tint="@color/white"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

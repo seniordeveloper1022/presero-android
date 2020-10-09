@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorLightNavyBlue">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="@dimen/_3sdp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".45"
+            android:layout_width="0dp"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:clickable="false"
+                android:id="@+id/cbActive"
+                android:layout_weight=".25"
+                android:layout_width="0dp"
+                android:buttonTint="@color/colorWhite"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_height="@dimen/_18sdp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/transparent_white"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_weight=".75"
+                android:textSize="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="richardVogel"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/transparent_white"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_weight=".55"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_weight=".6"
+                android:text="Richard Vogel"
+                android:textSize="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/transparent_white"
+                android:layout_height="match_parent"/>
+            <CheckBox
+                android:id="@+id/cbPrivileged"
+                android:layout_weight=".4"
+                android:clickable="false"
+                android:buttonTint="@color/colorWhite"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:layout_width="0dp"
+                android:layout_gravity="end|center"
+                android:gravity="end|center"
+                android:layout_height="@dimen/_18sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

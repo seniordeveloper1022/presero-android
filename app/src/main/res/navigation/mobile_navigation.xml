@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rapidzz.presero.Views.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_homeFragment_to_patientWoundsFragment"
+            app:destination="@id/patientWoundsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addPatientFragment"
+            app:destination="@id/addPatientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientWoundsFragment"
+        android:name="com.rapidzz.presero.Views.fragments.PatientWoundsFragment"
+        android:label="fragment_patient_wounds"
+        tools:layout="@layout/fragment_patient_wounds" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_patientWoundsFragment_to_treatmentPlanHomeFragment"
+            app:destination="@id/treatmentPlanHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/treatmentPlanHomeFragment"
+        android:name="com.rapidzz.presero.Views.fragments.TreatmentPlanHomeFragment"
+        android:label="fragment_treatment_plan_home"
+        tools:layout="@layout/fragment_treatment_plan_home" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_treatmentPlanHomeFragment_to_woundDebridementFragment"
+            app:destination="@id/woundDebridementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/woundDebridementFragment"
+        android:name="com.rapidzz.presero.Views.fragments.WoundDebridementFragment"
+        android:label="fragment_wound_debridement"
+        tools:layout="@layout/fragment_wound_debridement" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_woundDebridementFragment_to_previewWoundFragment"
+            app:destination="@id/previewWoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/previewWoundFragment"
+        android:name="com.rapidzz.presero.Views.fragments.PreviewWoundFragment"
+        android:label="fragment_preview_wound"
+        tools:layout="@layout/fragment_preview_wound" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_previewWoundFragment_to_woundDrainageFragment"
+            app:destination="@id/woundDrainageFragment" />
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_previewWoundFragment_to_editWoundPictureFragment2"
+            app:destination="@id/editWoundPictureFragment" />
+        <action
+            android:id="@+id/action_previewWoundFragment_to_previewPictureFragment"
+            app:destination="@id/previewPictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/woundDrainageFragment"
+        android:name="com.rapidzz.presero.Views.fragments.WoundDrainageFragment"
+        android:label="fragment_wound_drainage"
+        tools:layout="@layout/fragment_wound_drainage" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_woundDrainageFragment_to_woundCharacteristicsFragment"
+            app:destination="@id/woundCharacteristicsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/woundCharacteristicsFragment"
+        android:name="com.rapidzz.presero.Views.fragments.WoundCharacteristicsFragment"
+        android:label="fragment_wound_characteristics"
+        tools:layout="@layout/fragment_wound_characteristics" >
+        <action
+            app:enterAnim="@anim/enter_from_left"
+            android:id="@+id/action_woundCharacteristicsFragment_to_treatmentPlanFragment"
+            app:destination="@id/treatmentPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/treatmentPlanFragment"
+        android:name="com.rapidzz.presero.Views.fragments.TreatmentPlanFragment"
+        android:label="fragment_treatment_plan"
+        tools:layout="@layout/fragment_treatment_plan" >
+        <action
+            android:id="@+id/action_treatmentPlanFragment_to_patientWoundsFragment"
+            app:destination="@id/patientWoundsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editWoundPictureFragment"
+        android:name="com.rapidzz.presero.Views.fragments.EditWoundPictureFragment"
+        android:label="fragment_edit_wound"
+        tools:layout="@layout/fragment_edit_wound" />
+    <fragment
+        android:id="@+id/previewPictureFragment"
+        android:name="com.rapidzz.presero.Views.fragments.PreviewPictureFragment"
+        android:label="fragment_preview_picture"
+        tools:layout="@layout/fragment_preview_picture" />
+    <fragment
+        android:id="@+id/addPatientFragment"
+        android:name="com.rapidzz.presero.Views.fragments.AddPatientFragment"
+        android:label="fragment_add_patient"
+        tools:layout="@layout/fragment_add_patient" >
+        <action
+            android:id="@+id/action_addPatientFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.rapidzz.presero.Views.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_operatorManagementFragment"
+            app:destination="@id/operatorManagementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOperatorFragment"
+        android:name="com.rapidzz.presero.Views.fragments.AddOperatorFragment"
+        android:label="fragment_add_operator"
+        tools:layout="@layout/fragment_add_operator" />
+    <fragment
+        android:id="@+id/operatorManagementFragment"
+        android:name="com.rapidzz.presero.Views.fragments.OperatorManagementFragment"
+        android:label="fragment_operator_management"
+        tools:layout="@layout/fragment_operator_management" >
+        <action
+            android:id="@+id/action_operatorManagementFragment_to_addOperatorFragment"
+            app:destination="@id/addOperatorFragment" />
+    </fragment>
+</navigation>

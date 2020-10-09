@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:background="@color/colorPrimary"
+tools:context="com.rapidzz.presero.Views.fragments.WoundCharacteristicsFragment">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_above="@id/footor"
+    android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="@dimen/_20sdp"
+               app:cardElevation="@dimen/_5sdp"
+               app:cardBackgroundColor="@color/colorLightNavyBlue"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginBottom="@dimen/_25sdp"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:padding="@dimen/_10sdp">
+
+
+               <TextView
+                   style="@style/TvNormalStyle"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:lineSpacingExtra="@dimen/_7sdp"
+                   android:text="@string/is_an_antimicrobial_needed"
+                   android:textAlignment="textStart" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   android:orientation="horizontal"
+                   android:weightSum="1">
+
+                   <Button
+                       android:id="@+id/btnNo"
+                       style="@style/buttonStyle"
+                       android:layout_width="0dp"
+                       android:layout_height="@dimen/_35sdp"
+                       android:layout_marginLeft="@dimen/_15sdp"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:layout_marginRight="@dimen/_15sdp"
+                       android:layout_weight=".5"
+                       android:background="@drawable/button_outline_grey"
+                       android:text="@string/no" />
+
+                   <Button
+                       android:id="@+id/btnYes"
+                       style="@style/buttonStyle"
+                       android:layout_width="0dp"
+                       android:layout_height="@dimen/_35sdp"
+                       android:layout_marginLeft="@dimen/_15sdp"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:layout_marginRight="@dimen/_15sdp"
+                       android:layout_weight=".5"
+                       android:background="@drawable/button_outline_grey"
+                       android:text="@string/yes" />
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:background="@color/colorViewLine" />
+
+               <TextView
+                   style="@style/TvNormalStyle"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:lineSpacingExtra="@dimen/_10sdp"
+                   android:text="@string/is_there_a_significant_change_in_wound_ncharacteristics_since_last_visit"
+                   android:textAlignment="textStart"
+                   android:textColor="@color/transparent_white" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_25sdp"
+                   android:orientation="horizontal"
+                   android:weightSum="1">
+
+                   <Button
+                       android:id="@+id/btnYesLastVisit"
+                       style="@style/buttonStyle"
+                       android:layout_width="0dp"
+                       android:layout_height="@dimen/_35sdp"
+                       android:layout_marginLeft="@dimen/_15sdp"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:layout_marginRight="@dimen/_15sdp"
+                       android:layout_weight=".5"
+                       android:background="@drawable/button_outline_grey"
+                       android:text="@string/no" />
+
+                   <Button
+                       android:id="@+id/btnNoLastVisit"
+                       style="@style/buttonStyle"
+                       android:layout_width="0dp"
+                       android:layout_height="@dimen/_35sdp"
+                       android:layout_marginLeft="@dimen/_15sdp"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:layout_marginRight="@dimen/_15sdp"
+                       android:layout_weight=".5"
+                       android:background="@drawable/button_outline_grey"
+                       android:text="@string/yes" />
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:background="@color/colorViewLine" />
+
+               <TextView
+                   style="@style/TvNormalStyle"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                   android:textColor="@color/transparent_white"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:lineSpacingExtra="@dimen/_10sdp"
+                   android:text="Which Characteristics of the wound\nhave changed?"
+                   android:textAlignment="textStart" />
+
+               <LinearLayout
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                   android:layout_marginBottom="@dimen/_20sdp"
+                   android:orientation="vertical">
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/rvCheckbox"
+                       android:layout_width="match_parent"
+                       tools:listitem="@layout/rv_checkbox"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/llCharacteristics"
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                   android:layout_marginBottom="@dimen/_20sdp"
+                   android:orientation="vertical">
+
+                   <CheckBox
+                       android:id="@+id/rbRedness"
+                       android:layout_marginTop="@dimen/_20sdp"
+                       style="@style/CheckBoxStyle"
+                       android:text="Redness/warmth"/>
+
+                   <CheckBox
+                       android:id="@+id/rbOrder"
+                       style="@style/CheckBoxStyle"
+                       android:text="Order"/>
+                   <CheckBox
+                       android:id="@+id/rbTissue"
+                       style="@style/CheckBoxStyle"
+                       android:text="Tissue"/>
+                   <CheckBox
+                       android:id="@+id/rbPain"
+                       style="@style/CheckBoxStyle"
+                       android:text="Pain"/>
+                   <CheckBox
+                       android:id="@+id/rvSignificant"
+                       style="@style/CheckBoxStyle"
+                       android:text="Significant wound closure" />
+                   <CheckBox
+                       android:id="@+id/rbOther"
+                       style="@style/CheckBoxStyle"
+                       android:text="Other" />
+
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+           </androidx.cardview.widget.CardView>
+       </LinearLayout>
+
+
+
+</ScrollView>
+<LinearLayout
+    android:id="@+id/footor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightNavyBlue"
+    android:layout_alignParentBottom="true"
+    android:weightSum="1"
+    android:layout_height="@dimen/_45sdp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBack"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:tint="@color/colorWhite"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+            <TextView
+                android:text="Back"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                style="@style/TvNormalStyle"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/linearLayoutNext"
+                android:text="Next"
+                android:enabled="false"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/transparent_white"
+                android:paddingRight="@dimen/_17sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                style="@style/TvNormalStyle"/>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:tint="@color/colorWhite"
+                android:rotation="180"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

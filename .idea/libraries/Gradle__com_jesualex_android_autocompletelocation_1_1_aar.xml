@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jesualex.android:autocompletelocation:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ec57a48bdae536e8077c04c96081df7/jetified-autocompletelocation-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8ec57a48bdae536e8077c04c96081df7/jetified-autocompletelocation-1.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jesualex.android/autocompletelocation/1.1/eb34e2406b6de4fd0376e981de596030100fb406/autocompletelocation-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jesualex.android/autocompletelocation/1.1/5c2d9fc035b5ee5c603bff72c705eb693659d832/autocompletelocation-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

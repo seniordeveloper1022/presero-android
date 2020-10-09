@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Presero.iml" filepath="$PROJECT_DIR$/.idea/modules/Presero.iml" group="Presero" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Presero/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fingerpaintview/fingerpaintview.iml" filepath="$PROJECT_DIR$/.idea/modules/fingerpaintview/fingerpaintview.iml" group="Presero/fingerpaintview" />
+    </modules>
+  </component>
+</project>

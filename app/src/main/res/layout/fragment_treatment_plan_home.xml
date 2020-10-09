@@ -1,0 +1,340 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:background="@color/colorPrimary"
+tools:context="com.rapidzz.presero.Views.fragments.TreatmentPlanHomeFragment">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_above="@id/footor"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_marginTop="@dimen/_20sdp"
+             android:layout_marginLeft="@dimen/_10sdp"
+             android:layout_marginRight="@dimen/_10sdp"
+             android:background="@color/colorLightNavyBlue"
+             android:orientation="vertical"
+             android:paddingRight="@dimen/_20sdp"
+             android:paddingLeft="@dimen/_20sdp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:padding="@dimen/_5sdp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="textStart"
+                     android:textSize="@dimen/_10sdp"
+                     android:textColor="@color/transparent_white"
+                     android:text="Name"
+                     style="@style/TvNormalStyle"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_marginLeft="@dimen/_30sdp"
+                     android:textSize="@dimen/_10sdp"
+                     android:text="Jeo Flanders"
+                     style="@style/TvNormalStyle"/>
+
+             </LinearLayout>
+             <View
+                 android:background="#D8D8D8"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"/>
+             <LinearLayout
+                 android:padding="@dimen/_5sdp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="textStart"
+                     android:textSize="@dimen/_10sdp"
+                     android:textColor="@color/transparent_white"
+                     android:text="Date of Birth"
+                     style="@style/TvNormalStyle"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_marginLeft="@dimen/_10sdp"
+                     android:textSize="@dimen/_10sdp"
+                     android:text="07/17/2020"
+                     style="@style/TvNormalStyle"/>
+
+             </LinearLayout>
+             <View
+                 android:background="#D8D8D8"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"/>
+             <LinearLayout
+                 android:padding="@dimen/_5sdp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="textStart"
+                     android:textSize="@dimen/_10sdp"
+                     android:textColor="@color/transparent_white"
+                     android:text="ID"
+                     style="@style/TvNormalStyle"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:textAllCaps="true"
+                     android:layout_marginLeft="@dimen/_10sdp"
+                     android:textSize="@dimen/_10sdp"
+                     android:text="uyhjg45888"
+                     style="@style/TvNormalStyle"/>
+
+             </LinearLayout>
+             <View
+                 android:background="#D8D8D8"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"/>
+             <LinearLayout
+                 android:padding="@dimen/_5sdp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="textStart"
+                     android:textSize="@dimen/_10sdp"
+                     android:textColor="@color/transparent_white"
+                     android:text="Wound name : "
+                     style="@style/TvNormalStyle"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_marginLeft="@dimen/_20sdp"
+                     android:textSize="@dimen/_10sdp"
+                     android:text="Sacral Wound"
+                     style="@style/TvNormalStyle"/>
+
+             </LinearLayout>
+             <View
+                 android:background="#D8D8D8"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"/>
+             <LinearLayout
+                 android:padding="@dimen/_5sdp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="@dimen/_10sdp"
+                 android:layout_marginTop="@dimen/_5sdp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="textStart"
+                     android:textSize="@dimen/_10sdp"
+                     android:textColor="@color/transparent_white"
+                     android:text="Wound Type : "
+                     style="@style/TvNormalStyle"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_marginLeft="@dimen/_23sdp"
+                     android:textSize="@dimen/_10sdp"
+                     android:text="Pressure UIcer/Injury "
+                     style="@style/TvNormalStyle"/>
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:paddingTop="@dimen/_5sdp"
+           android:paddingBottom="@dimen/_5sdp"
+           android:background="@color/colorDarkNavyBlue"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="Wound Identifications"
+               android:textSize="@dimen/_12sdp"
+               android:textAlignment="textStart"
+               android:textColor="@color/colorPink"
+               android:layout_marginLeft="@dimen/_30sdp"
+               style="@style/TvNormalStyle"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/transparent_white"
+                android:text="Wound name : "
+                style="@style/TvNormalStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Sacral Wound"
+                style="@style/TvNormalStyle"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_10sdp"
+                android:layout_gravity="start|center"
+                android:textColor="@color/transparent_white"
+                android:text="Wound Type : "
+                style="@style/TvNormalStyle"/>
+
+           <RelativeLayout
+               android:orientation="horizontal"
+               android:layout_marginLeft="@dimen/_23sdp"
+               android:layout_width="@dimen/_155sdp"
+               android:background="@color/colorDarkNavyBlue"
+               android:layout_height="@dimen/_30sdp">
+               <Spinner
+                   android:id="@+id/spWoundTypes"
+                   android:layout_width="match_parent"
+                   android:entries="@array/wound_type"
+                   android:layout_centerVertical="true"
+                   style="@style/spinnerStyle"
+                   android:layout_height="wrap_content"/>
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="@dimen/_30sdp"
+                   android:background="@color/colorLightNavyBlue"
+                   android:gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_height="match_parent">
+                   <ImageView
+                       android:src="@drawable/ic_drop_down"
+                       android:layout_gravity="center"
+                       android:tint="@color/colorWhite"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+           </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDiseaseImages"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#29333E"
+            tools:listitem="@layout/rv_brain_images"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+<LinearLayout
+    android:id="@+id/footor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightNavyBlue"
+    android:layout_alignParentBottom="true"
+    android:weightSum="1"
+    android:layout_height="@dimen/_45sdp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCancel"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                style="@style/TvNormalStyle"/>
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/ic_cancel" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/linearLayoutNext"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Next"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                style="@style/TvNormalStyle"/>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:tint="@color/colorWhite"
+                android:rotation="180"
+                android:src="@drawable/ic_back" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

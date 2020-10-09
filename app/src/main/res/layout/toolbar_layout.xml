@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_56sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/ic_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_centerInParent="true"
+        android:text="Toolbar Title"
+        style="@style/TvExtraHeadingStyle" />
+</RelativeLayout>

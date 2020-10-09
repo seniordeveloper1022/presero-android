@@ -1,0 +1,3 @@
+include ':fingerpaintview'
+include ':app'
+rootProject.name='Presero'

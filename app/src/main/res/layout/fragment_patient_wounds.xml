@@ -1,0 +1,467 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:background="@color/colorPrimary"
+tools:context="com.rapidzz.presero.Views.fragments.PatientDetailFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:padding="@dimen/_3sdp"
+                android:background="@color/colorLightNavyBlue"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="Joe Flanders"
+                        style="@style/TvNormalStyle"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="ID: "
+                        android:textColor="@color/colorPink"
+                        style="@style/TvNormalStyle"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorPink"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="UY558967"
+                        android:textAllCaps="true"
+                        style="@style/TvNormalStyle"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="D-Birth "
+                        style="@style/TvNormalStyle"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_10sdp"
+                        android:text="07/17/2020"
+                        style="@style/TvNormalStyle"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:background="@drawable/button_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:weightSum="1"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_height="wrap_content">
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewPager"
+                                android:background="@drawable/injury"
+                                android:visibility="visible"
+                                android:scrollIndicators="left"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_190sdp" />
+                            <com.afollestad.viewpagerdots.DotsIndicator
+                                android:id="@+id/dots"
+                                app:dot_tint="@color/colorPink"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentBottom="true"
+                                />
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivAddPic"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_160sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/ic_add" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWounds"
+                    tools:listitem="@layout/rv_wounds"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:itemCount="10"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llPatientWoundProperties"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/wound_name"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="Sacral wound"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/wound_type"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="Pressure UIcer/Injury"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Last Scan"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="01/19/2020"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/area_l_x_w"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="8.25 cm"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/length"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="10.0 cm"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/width"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="7.8 cm"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/exact_area"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="88.8 cm"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/max_depth"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="3.3 cm"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/volume"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="111.3 cc"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/reduction_in_exact_area_from_first_scan"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="0 %"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/reduction_in_volume_from_first_scan"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="0%"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:background="@color/colorDarkNavyBlue"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/scan_taken"
+                            android:textColor="@color/colorPink"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+                        <TextView
+                            android:text="1 %"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            style="@style/TvNormalStyle"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <shape>
+            <stroke android:color="@color/gray"
+                android:width="1dp">
+            </stroke>
+            <size android:width="@dimen/_10sdp" android:height="@dimen/_10sdp"/>
+            <gradient
+                android:startColor="@color/colorLightNavyBlue"
+                android:centerColor="@color/colorLightNavyBlue"
+                android:endColor="@color/colorLightNavyBlue"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+</selector>

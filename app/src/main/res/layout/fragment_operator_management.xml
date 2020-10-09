@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightNavyBlue"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Views.fragments.OperatorManagementFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_above="@id/footor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/transparent_white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+           <LinearLayout
+               android:weightSum="1"
+
+               android:layout_margin="@dimen/_3sdp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_weight=".45"
+                   android:layout_width="0dp"
+                   android:weightSum="1"
+                   android:layout_gravity="center"
+                   android:layout_height="wrap_content">
+
+                   <CheckBox
+                       android:buttonTint="@color/colorWhite"
+                       android:layout_weight=".25"
+                       android:layout_width="0dp"
+                       android:clickable="false"
+                       android:paddingTop="@dimen/_5sdp"
+                       android:paddingBottom="@dimen/_5sdp"
+                       android:layout_gravity="center"
+                       android:layout_height="@dimen/_18sdp"/>
+                   <View
+                       android:layout_width="1dp"
+                       android:background="@color/transparent_white"
+                       android:layout_height="match_parent"/>
+                   <TextView
+                       android:layout_weight=".75"
+                       android:textSize="@dimen/_12sdp"
+                       android:text="Username"
+                       android:paddingTop="@dimen/_5sdp"
+                       android:paddingBottom="@dimen/_5sdp"
+                       android:layout_marginLeft="@dimen/_5sdp"
+                       android:textColor="@color/colorPink"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+               <View
+                   android:layout_width="1dp"
+                   android:background="@color/transparent_white"
+                   android:layout_height="match_parent"/>
+               <LinearLayout
+                   android:layout_weight=".55"
+                   android:layout_width="0dp"
+                   android:layout_gravity="center"
+
+                   android:weightSum="1"
+                   android:layout_height="wrap_content">
+
+
+                   <TextView
+                       android:layout_weight=".6"
+                       android:text="Full Name"
+                       android:paddingTop="@dimen/_5sdp"
+                       android:paddingBottom="@dimen/_5sdp"
+                       android:textSize="@dimen/_12sdp"
+                       android:layout_marginLeft="@dimen/_5sdp"
+                       android:textColor="@color/colorPink"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+                   <View
+                       android:layout_width="1dp"
+                       android:background="@color/transparent_white"
+                       android:layout_height="match_parent"/>
+                   <TextView
+                       android:layout_weight=".4"
+                       android:text="Privileged"
+                       android:paddingTop="@dimen/_5sdp"
+                       android:paddingBottom="@dimen/_5sdp"
+                       android:textSize="@dimen/_12sdp"
+                       android:layout_marginLeft="@dimen/_5sdp"
+                       android:textColor="@color/colorPink"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+           </LinearLayout>
+
+            <View
+                android:background="@color/transparent_white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOperatorsList"
+            tools:listitem="@layout/rv_operators_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLightNavyBlue"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvBack"
+                    style="@style/TvNormalStyle"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="match_parent"
+                    android:text="Back"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+            <LinearLayout
+                android:id="@+id/llDeleteOperator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvDeleteOperator"
+                    style="@style/TvNormalStyle"
+                    android:textColor="@color/transparent_white"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="match_parent"
+                    android:text="Delete"
+                    android:enabled="false"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/llAddOperator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAddOperator"
+                    style="@style/TvNormalStyle"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="match_parent"
+                    android:text="Add"
+
+                    android:textSize="@dimen/_14sdp" />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+            <LinearLayout
+                android:id="@+id/llEditOperator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvEditOperator"
+                    style="@style/TvNormalStyle"
+                    android:enabled="false"
+                    android:textAlignment="center"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/transparent_white"
+                    android:layout_width="match_parent"
+                    android:text="Edit"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

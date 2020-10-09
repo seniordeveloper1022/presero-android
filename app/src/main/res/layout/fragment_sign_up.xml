@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/colorWhite"
+    android:gravity="top"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TvExtraHeadingStyle"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Register"
+                android:textAlignment="viewStart" />
+
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/first_name_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                style="@style/editTextStyle"
+                android:inputType="textEmailAddress" />
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/last_name_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                style="@style/editTextStyle"
+
+                android:inputType="textEmailAddress" />
+
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/email_field"
+                android:textAlignment="viewStart"
+
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/editTextStyle"
+
+                android:inputType="textEmailAddress" />
+
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/cnic_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etCnic"
+                style="@style/editTextStyle"
+                android:inputType="number" />
+
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/address_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/editTextStyle"
+                android:hint="Pick address"
+                android:inputType="text" />
+
+
+
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/phone_number_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                style="@style/layoutETStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    app:ccpDialog_showNameCode="true"
+                    app:ccp_defaultNameCode="PK"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingTop="15dp"
+
+                    android:paddingBottom="15dp"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/sampleText"
+                    style="@style/TvHeadingStyle"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="0dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/please_verify"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/btnVerify"
+                    style="@style/TvHeadingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/bg_round_primary_unfilled"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="@string/verify"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/password_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/editTextStyle"
+                android:hint="***********"
+                android:inputType="textPassword" />
+
+
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/re_type_password_field"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/etReTypePassword"
+                style="@style/editTextStyle"
+                android:hint="***********"
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/buttonStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/button_background"
+                android:text="@string/register" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

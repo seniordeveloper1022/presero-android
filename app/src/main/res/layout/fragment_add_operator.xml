@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorPrimary"
+android:orientation="vertical"
+tools:context=".Views.fragments.AddOperatorFragment">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/footor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="First Name" />
+
+
+        <EditText
+            android:id="@+id/etFirstName"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="First Name"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Middle Name" />
+
+
+        <EditText
+            android:id="@+id/etMiddleName"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="Middle Name"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Last Name" />
+
+
+        <EditText
+            android:id="@+id/etLastName"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="User Name" />
+
+
+        <EditText
+            android:id="@+id/etUserName"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="User Name"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Email" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            style="@style/TvHeadingStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Password" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/editTextStyle"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Privileged User"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:id="@+id/cbActive"
+                android:buttonTint="@color/colorWhite"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+<LinearLayout
+    android:id="@+id/footor"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorLightNavyBlue"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightBlack"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_cancel"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                style="@style/TvNormalStyle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Cancel"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/llSaveOperator"
+            android:layout_width="0dp"
+            android:enabled="false"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TvNormalStyle"
+                android:id="@+id/ivScanImage"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="Save"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_true"
+                android:tint="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

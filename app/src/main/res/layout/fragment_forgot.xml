@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    tools:context="com.rapidzz.presero.Views.fragments.SignInFragment">
+
+
+    <ScrollView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                style="@style/TvHeadingStyle"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:text="@string/email" />
+
+
+            <EditText
+                android:id="@+id/etEmailOrUsername"
+                style="@style/editTextStyle"
+                android:drawableRight="@drawable/icon_email"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+
+
+
+            <Button
+                android:id="@+id/btnSendRequest"
+                style="@style/buttonStyle"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:background="@drawable/button_background"
+                android:text="Send Request" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

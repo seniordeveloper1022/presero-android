@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="@dimen/_1sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_2sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardBackgroundColor="#29333E"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llDiseaseImage"
+            android:layout_width="@dimen/_110sdp"
+            android:background="#495762"
+            android:layout_height="@dimen/_110sdp">
+            <ImageView
+                android:id="@+id/ivBrainImage"
+                android:src="@drawable/wound_image_1"
+                android:layout_margin="@dimen/_3sdp"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvDiseaseName"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:text="Diabetic Neuropathy"
+            style="@style/TvNormalStyle"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

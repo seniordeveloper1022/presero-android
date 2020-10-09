@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">Presero</string>
+
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDqnJ4wFLv1fP2_E3rDkpvFg8G9gVCh9h0</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_account">Dont have account ? SIGN UP</string>
+    <string name="email_field">EMAIL</string>
+    <string name="first_name_field">First Name</string>
+    <string name="last_name_field">Last Name</string>
+    <string name="phone_number_field">PHONE NUMBER</string>
+    <string name="cnic_field">CNIC</string>
+    <string name="password_field">Password</string>
+    <string name="re_type_password_field">RE TYPE PASSWORD</string>
+    <string name="address_field">Address</string>
+
+    <string name="register">Register</string>
+    <string name="submit_details">Submit details</string>
+    <string name="verify">Verify</string>
+    <string name="please_verify">Please verify your phone number </string>
+
+
+    <string name="field_req">Field Required!!</string>
+    <string name="address_req">Complete Address Required!!</string>
+    <string name="image_req">Image Required!!</string>
+    <string name="new_passwrod_req">New Password Required!!</string>
+    <string name="old_password_req">Old Password Required!!</string>
+    <string name="confrim_password_required">Confrim Password Required!!</string>
+    <string name="password_not_matched">Password Not Matched!!</string>
+
+
+    <string name="req_name">Name Required !!</string>
+    <string name="req_email">Email Required !!</string>
+    <string name="invalid_email">Email Invalid !!</string>
+    <string name="invalid_phone">Phone Invalid !!</string>
+    <string name="req_code">Invalid code !!</string>
+    <string name="req_password">Password Required !!</string>
+    <string name="req_message">Message Required !!</string>
+    <string name="req_phone">Phone Number Required !!</string>
+    <string name="req_phone_verify">Phone Number not verified !!</string>
+    <string name="retype_password">Password doesn\'t match !!</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_my_orders">My Orders</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_payment">Payments</string>
+    <string name="menu_help">Help / Support</string>
+    <string name="menu_logout">Logout</string>
+
+
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="login">Login</string>
+    <string name="get_started">Get started</string>
+    <string name="forgot_npassword">Forgot Password</string>
+    <string name="please_enter_email_on_which_n_you_have_account">Please enter email on which \nyou have account</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="send_instructions">Send Instructions</string>
+    <string name="enter_6_digits_nrecovery_code">Enter 6-digits\n Recovery code</string>
+    <string name="the_recovery_code_sent_to">The recovery code sent to \n %1$s</string>
+    <string name="please_enter_code">Please enter code</string>
+    <string name="paste_code_here">Paste code here</string>
+    <string name="reset">Reset</string>
+    <string name="update_password">Update password</string>
+    <string name="update_your_password_by_entering_new_password_here">Update your password by\nentering new password here</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="change_password">Change password</string>
+    <string name="change_your_current_password">Change your current password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="enter_current_password">Enter current password</string>
+
+    <array name="dummy">
+        <item>dummy 1</item>
+        <item>dummy 2</item>
+        <item>dummy 3</item>
+        <item>dummy 4</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auto_enter_current_location">Auto Enter Current Location</string>
+    <string name="to_continue_turn_on_device_location_and_press_ok">To Continue, Turn ON device Location and Press OK</string>
+    <string name="or">OR</string>
+    <string name="enter_address_here">Enter Address Here</string>
+    <string name="my_current_location">My Current Location</string>
+    <string name="telephone_mobile">Telephone/Mobile:</string>
+    <string name="menu">Menu</string>
+    <string name="mot_expire">MOT Expire:</string>
+    <string name="car_details">Car Details:</string>
+    <string name="reg_no">Reg No:</string>
+
+
+    //GENERIC STRINGS
+    <string name="submit">Submit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="alert">Alert</string>
+    <string name="is_an_antimicrobial_needed">Is an antimicrobial needed?</string>
+    <string name="is_there_a_significant_change_in_wound_ncharacteristics_since_last_visit">Is there a significant change in wound\nCharacteristics since last visit ?</string>
+    <string name="wound_drainage">Wound Drainage</string>
+    <string name="wound_debridement">Wound Debridement</string>
+    <string name="wound_characteristics">Wound Characteristics</string>
+    <string name="low_none">Low/None</string>
+    <string name="moderate">Moderate</string>
+    <string name="high">High</string>
+    <string name="wound_filler">Wound Filler</string>
+    <string name="preview_wound">Preview Wound</string>
+    <string name="click_to_review">Click to review</string>
+    <string name="click_to_edit">Click to edit</string>
+    <string name="area_l_x_w">Area (L x W) :</string>
+    <string name="length">Length :</string>
+    <string name="width">Width :</string>
+    <string name="exact_area">Exact Area :</string>
+    <string name="max_depth">Max Depth :</string>
+    <string name="volume">Volume :</string>
+    <string name="reduction_in_exact_area_from_first_scan">Reduction in exact area, from first scan :</string>
+    <string name="comments">Comments</string>
+    <string name="reduction_in_volume_from_first_scan">Reduction in volume, from first scan :</string>
+    <string name="wound_name">Wound name : </string>
+    <string name="wound_type">Wound Type :</string>
+    <string name="scan_taken">Scan Taken :</string>
+    <string name="all_patients">All Patients</string>
+    <string name="treatment_plan">Treatment Plan</string>
+    <string name="patient_wound">Patient Wound</string>
+    <string name="password">Password</string>
+    <string name="user_name">User name</string>
+    <string name="email">Email</string>
+    <string name="privacy">Privacy</string>
+    <string name="faqs">FAQ\'s</string>
+    <string name="operators_list">Operators List</string>
+
+    <string-array name="wound_type">
+        <item>Diabetic/Neuropathy</item>
+        <item>Pressure UIcer/Injury</item>
+        <item>Vascular/Leg</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
